@@ -1,4 +1,4 @@
-arr = [1, 4, 3, 2, 5]
+arr = [1, 4, 2, 3, 5, 10, 8, 6, 4]
 
 def mergeSort(list):
     if len(list) == 1:
@@ -9,18 +9,38 @@ def mergeSort(list):
     left_side = list[:mid]
     right_side = list[mid:]
 
-    print(left_side)
-    print(right_side)
+    # print(left_side)
+    # print(right_side)
 
-    mergeSort(left_side)
-    mergeSort(right_side)
+    left_side = mergeSort(left_side)
+    right_side = mergeSort(right_side)
 
     # make a new array to merge left and right into
     new_arr = []
     # track position on left arr and right arr
-    left_i = 0
-    right_i = 0
+    li = 0
+    ri = 0
+
+    while li < len(left_side) and ri < len(right_side):
+        if left_side[li] <= right_side[ri]:
+            new_arr.append(left_side[li])
+            li += 1
+        else:
+            new_arr.append(right_side[ri])
+            ri += 1
+    
+    if li < len(left_side):
+        new_arr += left_side[li:]
+    elif ri < len(right_side):
+        new_arr += right_side[ri:]
+
+    print("Left: ", left_side)
+    print("Right: ", right_side)
+    print("New: ", new_arr)
+    print("")
+
+    return new_arr
 
 
 
-mergeSort(arr)
+print("🦄", mergeSort(arr))

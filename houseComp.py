@@ -3,7 +3,7 @@ SIMILAR
 -------------------------------------------------------------------------
 https://leetcode.com/problems/prison-cells-after-n-days/
 
-PROMT
+PROMPT
 -------------------------------------------------------------------------
 Write a function that takes two values, an array (arr) and an int (days).
 The array will have only 0's and 1's [1, 0, 0, 0, 1, 0, 0]

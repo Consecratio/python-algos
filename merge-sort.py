@@ -1,3 +1,13 @@
+'''
+SIMILAR
+-------------------------------------------------------------------------
+https://leetcode.com/problems/merge-sorted-array/
+
+PROMPT
+-------------------------------------------------------------------------
+Write a Merge Sort algo to sort the array [3, 4, 5, 1, 2, 6]
+'''
+
 arr = [1, 4, 2, 3, 5, 10, 8, 6, 4]
 
 def mergeSort(list):

@@ -57,5 +57,5 @@ def houseComp(num, array):
     return new_arr
 
 
-print(houseComp(4000000, [1, 0, 0, 1, 1]))
-print(houseComp(3, [1, 0, 0, 1, 1]))
+print(houseComp(3, [1, 0, 0, 1, 1])) # should return [1, 1, 1, 1, 0]
+# print(houseComp(4000000, [1, 0, 0, 1, 1])) # leave commented out until you've got a fast solution

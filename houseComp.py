@@ -13,5 +13,7 @@ Each day check each number's neighbors, if they're the same (both 0's or both 1'
 then the number will change to 0.
 If they are not the same, the number will change to 1.
 
+The neighbors out of bounds (-1) and (len(array)) are always 0's
+
 Return the array after n days
 '''

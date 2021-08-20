@@ -17,3 +17,15 @@ The neighbors out of bounds (-1) and (len(array)) are always 0's
 
 Return the array after n days
 '''
+
+def houseComp(num, array):
+    pass
+
+
+
+'''
+CODE ABOVE THIS LINE
+'''
+
+print(houseComp(3, [1, 0, 0, 1, 1])) # should return [1, 1, 1, 1, 0]
+# print(houseComp(4000000, [1, 0, 0, 1, 1])) # leave commented out until you've got a fast solution

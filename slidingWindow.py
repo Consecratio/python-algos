@@ -18,4 +18,4 @@ def slidingWindow(spots, k):
 CODE ABOVE HERE
 '''
 
-print([2, 3, 7, 15], 3)
+print([2, 3, 7, 15], 3) # should return 6

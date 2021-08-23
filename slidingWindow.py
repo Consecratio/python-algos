@@ -11,11 +11,16 @@ Find smallest length needed to cover k cars
 '''
 
 def slidingWindow(spots, k):
-    pass
-
+    length = float('inf')
+    for i in range(len(spots) - k):
+        if (spots[i + k - 1] - spots[i]) < length:
+            length = spots[i + k - 1] - spots[i] + 1
+    
+    return length
+        
 
 '''
 CODE ABOVE HERE
 '''
 
-print([2, 3, 7, 15], 3)
+print(slidingWindow([2, 3, 7, 15], 3)) # should return 6

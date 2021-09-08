@@ -24,3 +24,17 @@ new_image = [
     [9, 6, 3]
 ]
 '''
+
+def rotate(image):
+    pass
+
+
+# CODE ABOVE THIS LINE
+
+image = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(rotate(image))
